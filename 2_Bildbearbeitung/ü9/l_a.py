@@ -7,7 +7,7 @@ cv2.imshow("Original", img)
 
 
 def gamma_correction(img, gamma):
-    img = img.astype(np.float)
+    img = img.astype(float)
     img = 255 * np.power(img, gamma) / np.power(255, gamma)
     print(np.max(img))
     img = img.astype(np.uint8)
